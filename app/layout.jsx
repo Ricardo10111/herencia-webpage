@@ -1,4 +1,4 @@
-import { Playfair_Display, Playfair_Display_SC } from 'next/font/google'
+import { Playfair_Display } from 'next/font/google'
 import './globals.css'
 
 //Components
@@ -9,11 +9,11 @@ const playfairDisplay = Playfair_Display({
   variable: '--font-playfair-display',
 })
 
-const playfairDisplaySc = Playfair_Display_SC({
-  subsets: ['latin'],
-  weight: '400',
-  variable: '--font-playfair-display-sc',
-})
+// const playfairDisplaySc = Playfair_Display_SC({
+//   subsets: ['latin'],
+//   weight: '400',
+//   variable: '--font-playfair-display-sc',
+// })
 
 export const metadata = {
   title: 'Herencia Wood Art',
@@ -23,9 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body
-        className={`${playfairDisplay.variable} ${playfairDisplaySc.variable} antialiased`}
-      >
+      <body className={`${playfairDisplay.variable}  antialiased`}>
         <Header />
         {children}
       </body>
