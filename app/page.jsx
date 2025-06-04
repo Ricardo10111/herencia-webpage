@@ -1,12 +1,19 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 import RotatingWords from '@/components/RotatingWords'
 import PerfilHome from '@/components/PerfilHome'
 import FadeInTitle from '@/components/FadeInTitle'
-import FadeIn from '@/components/FadeIn'
+import FadeInFromCenter from '@/components/FadeInFromCenter'
 import ServicesHome from '@/components/ServicesHome'
+import ServicesImage from '@/components/ServicesImage'
+import PortfolioHome from '@/components/PortfolioHome'
+import ReviewHome from '@/components/ReviewHome'
+import Stats from '@/components/Stats'
+import ContactHome from '@/components/ContactHome'
+import GsapHeroContent from '@/components/GsapHeroContent'
 
 export default function Home() {
   return (
@@ -14,7 +21,7 @@ export default function Home() {
       {/* Image in the hero */}
       <section className='relative w-full h-[100vh] overflow-hidden'>
         {/* Imagen de fondo */}
-        <div className='absolute inset-0 -z-10 aspect-w-16 aspect-h-9'>
+        <FadeInFromCenter className='absolute inset-0 -z-10 aspect-w-16 aspect-h-9'>
           <Image
             src='/hero/HeroImage.jpg'
             alt='Wooden carved door'
@@ -23,34 +30,27 @@ export default function Home() {
             quality={100}
             priority
           />
-          <div className='absolute inset-0 bg-black/20' />{' '}
+          <div className='absolute inset-0 bg-black/20' />
           {/* Overlay oscurecido */}
-        </div>
+        </FadeInFromCenter>
 
-        {/* Contenido del Hero */}
-        <div className='flex flex-col justify-center items-start h-full px-6 md:px-20 text-white prose lg:prose-xl prose-slate'>
-          <FadeInTitle className='text-4xl md:text-6xl font-bold leading-tight mb-4'>
-            Your Vision,
-            <br />
-            Carved in Wood
-          </FadeInTitle>
-          <FadeIn className='text-lg md:text-xl mb-6'>
-            Find One-Of-A-Kind Wooden Solutions
-          </FadeIn>
-          <button className='bg-[#c5a95e] text-white px-6 py-3 text-base rounded-md hover:bg-[#a28620] transition'>
-            View Gallery
-          </button>
-        </div>
+        <GsapHeroContent />
       </section>
 
       <section className='flex flex-col items-center bg-[#F4F4F4] justify-center w-full py-32 px-8 md:px-67 '>
         <FadeInTitle className='text-3xl md:text-6xl font-thin text-center'>
-          Your Heritage Deserves to Be Built, Not <RotatingWords />
+          Your Heritage Deserves to Be Built, Not <span></span>
+          <RotatingWords />
         </FadeInTitle>
       </section>
 
       <PerfilHome />
       <ServicesHome />
+      <ServicesImage />
+      <PortfolioHome />
+      <ReviewHome />
+      <Stats />
+      <ContactHome />
     </main>
   )
 }

@@ -1,6 +1,8 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
-
+@import 'swiper/css';
+@import 'swiper/css/pagination';
+@import 'swiper/css/navigation';
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -120,4 +122,19 @@
     @apply bg-background text-foreground;
     font-family: var(--font-playfair-display);
   }
+}
+.transition-container {
+  transition:
+    opacity 0.5s ease-in-out,
+    transform 0.5s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(10px);
 }

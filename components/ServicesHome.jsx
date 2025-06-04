@@ -1,53 +1,67 @@
+'use client'
+
 import React from 'react'
+import Link from 'next/link'
+
+import FadeIn from './FadeIn'
 
 const servicesList = [
   {
-    logo: '/path/to/logo1.png',
-    title: 'Service 1',
-    description: 'Description of Service 1',
-    button: '/path/to/image1.jpg',
+    logo: '/woodlogo1.svg',
+    title: 'Inspire Wonder and Awe',
+    description: 'Design experiences that captivate and leave a mark',
+    button: 'More Details',
   },
   {
-    logo: '/path/to/logo1.png',
-    title: 'Service 2',
-    description: 'Description of Service 2',
-    button: '/path/to/image2.jpg',
+    logo: '/woodlogo2.svg',
+    title: 'Greater, Truer Spaces',
+    description: 'Shape moments that resonate and transform your space.',
+    button: 'More Details',
   },
   {
-    logo: '/path/to/logo1.png',
-    title: 'Service 3',
-    description: 'Description of Service 3',
-    button: '/path/to/image3.jpg',
+    logo: '/woodlogo3.svg',
+    title: 'Ensure Your Peace of Mind',
+    description: 'Experience reliability with seamless and dependable service.',
+    button: 'More Details',
   },
 ]
 const ServicesHome = () => {
   return (
     <section>
-      <div>
-        <h2>SERVICES</h2>
-        <h3>My Premium Benefits</h3>
-      </div>
+      <FadeIn className='flex flex-col items-center  justify-center w-full py-32 px-8 md:px-67 '>
+        <h2 className='text-2xl md:text-4xl font-thin text-center text-[#c5a95e]'>
+          SERVICES
+        </h2>
+        <h3 className='text-3xl md:text-6xl font-thin text-center'>
+          My Premium Benefits
+        </h3>
+      </FadeIn>
 
       {/* Services list */}
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 p-6'>
         {servicesList.map((service, index) => (
-          <div
+          <FadeIn
             key={index}
-            className='bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300'
+            className='flex flex-col items-center bg-[#F8F8F8] w-[370px] h-[552px] gap-8 shadow-lg  overflow-hidden hover:shadow-2xl transition-shadow duration-300'
           >
             <img
               src={service.logo}
               alt={service.title}
-              className='w-full h-32 object-cover'
+              className='w-[140px] h-[147px] object-cover'
             />
-            <div className='p-4'>
-              <h4 className='text-xl font-semibold mb-2'>{service.title}</h4>
-              <p className='text-gray-600 mb-4'>{service.description}</p>
-              <button className='bg-[#c5a95e] text-white px-4 py-2 rounded-md hover:bg-[#a28620] transition'>
+            <div className='p-4 flex flex-col items-center px-12 gap-6'>
+              <h4 className='text-3xl  mb-2 text-center'>{service.title}</h4>
+              <p className='text-[#5B5B5B] mb-4 text-center'>
+                {service.description}
+              </p>
+              <Link
+                href='/services'
+                className='bg-[#E9E1D9] hover:bg-[#dfd3c9] px-20 py-4 mt-10 cursor-pointer transition'
+              >
                 View More
-              </button>
+              </Link>
             </div>
-          </div>
+          </FadeIn>
         ))}
       </div>
     </section>

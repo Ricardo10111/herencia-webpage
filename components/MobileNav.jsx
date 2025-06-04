@@ -4,34 +4,41 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { CiMenuFries } from 'react-icons/ci'
+import { useEffect, useState } from 'react'
 
 const links = [
   {
-    name: 'Home',
+    name: 'HOME',
     path: '/',
   },
   {
-    name: 'Services',
+    name: 'ABOUT',
+    path: '/about',
+  },
+  {
+    name: 'SERVICES',
     path: '/services',
   },
   {
-    name: 'Resume',
-    path: '/resume',
+    name: 'PORTFOLIO',
+    path: '/portfolio',
   },
   {
-    name: 'Work',
-    path: '/work',
-  },
-  {
-    name: 'Contact',
+    name: 'CONTACT',
     path: '/contact',
   },
 ]
 
 const MobileNav = () => {
   const pathname = usePathname()
+  const [open, setOpen] = useState(false)
+
+  useEffect(() => {
+    setOpen(false)
+  }, [pathname])
+
   return (
-    <Sheet>
+    <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger className='flex justify-center items-center'>
         <CiMenuFries className='text-[32px] text-accent' />
       </SheetTrigger>
@@ -49,7 +56,7 @@ const MobileNav = () => {
               <Link
                 key={index}
                 href={link.path}
-                className={`${link.path === pathname && 'text-accent border-b-2 border-accent'} text-xl capitalize hover:text-accent transition-all`}
+                className={`${link.path === pathname && 'text-[#C5A95E] border-b-2 border-accent'} text-xl capitalize hover:text-[#C5A95E] transition-all`}
               >
                 {link.name}
               </Link>

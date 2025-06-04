@@ -19,7 +19,7 @@ const RotatingWords = () => {
   const [fade, setFade] = useState(true)
 
   useEffect(() => {
-    const fadeOutTimer = setTimeout(() => setFade(false), delay - 600) // empieza fade-out antes de cambiar
+    const fadeOutTimer = setTimeout(() => setFade(false), delay - 800) // empieza fade-out antes de cambiar
     const wordChangeTimer = setTimeout(() => {
       setIndex((prev) => (prev + 1) % words.length)
       setFade(true) // vuelve a mostrar
@@ -33,7 +33,7 @@ const RotatingWords = () => {
 
   return (
     <span
-      className={`transition-all duration-1000 text-[#C5A95E] inline-block font-medium
+      className={`transition-all duration-2000 text-[#C5A95E] inline-block font-medium
         ${fade ? 'opacity-100 blur-0' : 'opacity-0 blur-sm'}
       `}
     >

@@ -3,17 +3,12 @@ import './globals.css'
 
 //Components
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 const playfairDisplay = Playfair_Display({
   subsets: ['latin'],
   variable: '--font-playfair-display',
 })
-
-// const playfairDisplaySc = Playfair_Display_SC({
-//   subsets: ['latin'],
-//   weight: '400',
-//   variable: '--font-playfair-display-sc',
-// })
 
 export const metadata = {
   title: 'Herencia Wood Art',
@@ -26,6 +21,7 @@ export default function RootLayout({ children }) {
       <body className={`${playfairDisplay.variable}  antialiased`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )

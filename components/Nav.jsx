@@ -9,7 +9,7 @@ const linksL = [
   { name: 'SERVICES', path: '/services' },
 ]
 const linksR = [
-  { name: 'PORTFOLIO', path: '/work' },
+  { name: 'PORTFOLIO', path: '/portfolio' },
   { name: 'CONTACT', path: '/contact' },
 ]
 

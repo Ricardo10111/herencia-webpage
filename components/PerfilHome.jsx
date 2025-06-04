@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { Button } from './ui/button'
+import Link from 'next/link'
 
 import FadeIn from './FadeIn'
 import SlideInFromLeft from './SlideInFromLeft'
@@ -39,9 +39,14 @@ const PerfilHome = () => {
             id sit interdum lacus turpis ac. Integer malesuada sagittis
             placerat.
           </span>
-          <img src='/Flower.svg' alt='flower Logo' className='h-10' />
+          <img src='/logoprofile.svg' alt='flower Logo' className='h-12' />
           <h3 className='text-5xl'>Juan</h3>
-          <Button>Learn More</Button>
+          <Link
+            href='/about'
+            className='bg-[#E9E1D9] hover:bg-[#dfd3c9] px-20 py-4 mt-10 cursor-pointer transition'
+          >
+            Learn More
+          </Link>
         </FadeIn>
       </div>
     </section>
