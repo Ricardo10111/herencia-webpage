@@ -48,7 +48,7 @@ const PortfolioHome = () => {
 
         <div className='relative w-[320px] h-[492px]'>
           <Image
-            src={woodart.image}
+            src='/portfolio/image.jpg'
             alt={woodart.title}
             layout='fill'
             objectFit='cover'
