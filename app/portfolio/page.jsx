@@ -1,6 +1,7 @@
 import React from 'react'
 
 import FadeIn from '@/components/FadeIn'
+import PortfolioGallery from '@/components/PortfolioGallery'
 
 const portfolio = () => {
   return (
@@ -13,6 +14,7 @@ const portfolio = () => {
           HIGHLIGHTED WORKS
         </h2>
       </FadeIn>
+      <PortfolioGallery />
     </section>
   )
 }

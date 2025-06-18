@@ -21,21 +21,21 @@ const GsapHeroContent = () => {
     const splitSubtitle = new SplitText(subtitleRef.current, { type: 'words' })
 
     tl.from(splitTitle.words, {
-      duration: 1,
+      duration: 0.5,
       y: 10,
       stagger: 0.1,
       autoAlpha: 0,
-      filter: 'blur(10px)',
+      filter: 'blur(4px)',
     })
-
+    // bajar el blur
     tl.from(
       splitSubtitle.words,
       {
-        duration: 1.5,
+        duration: 0.5,
         y: 10,
         stagger: 0.1,
         autoAlpha: 0,
-        filter: 'blur(10px)',
+        filter: 'blur(4px)',
       },
       '+=0.1',
     )

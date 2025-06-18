@@ -8,7 +8,7 @@ const FadeInFromCenter = ({ children, className = '', as = 'div' }) => {
   return (
     <MotionTag
       className={`opacity-0 ${className}`}
-      initial={{ opacity: 0, scale: 1, filter: 'blur(10px)' }}
+      initial={{ opacity: 0, scale: 1, filter: 'blur(0px)' }}
       whileInView={{ opacity: 1, scale: 1, filter: 'blur(0)' }}
       transition={{ duration: 1, ease: 'easeOut' }}
       viewport={{ once: true, amount: 0.5 }}

@@ -21,9 +21,9 @@ export default function Home() {
       {/* Image in the hero */}
       <section className='relative w-full h-[100vh] overflow-hidden'>
         {/* Imagen de fondo */}
-        <FadeInFromCenter className='absolute inset-0 -z-10 aspect-w-16 aspect-h-9'>
+        <div className='absolute inset-0 -z-10 aspect-w-16 aspect-h-9'>
           <Image
-            src='/hero/HeroImage.jpg'
+            src='/hero/woodhero.jpg'
             alt='Wooden carved door'
             layout='fill'
             objectFit='cover'
@@ -32,7 +32,7 @@ export default function Home() {
           />
           <div className='absolute inset-0 bg-black/20' />
           {/* Overlay oscurecido */}
-        </FadeInFromCenter>
+        </div>
 
         <GsapHeroContent />
       </section>
