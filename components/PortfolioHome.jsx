@@ -51,8 +51,8 @@ const PortfolioHome = () => {
             src={woodart.image}
             alt={woodart.title}
             layout='fill'
-            objectFit='cover'
-            className='shadow-md'
+            objectFit='contain'
+            className=''
           />
         </div>
 
@@ -61,8 +61,8 @@ const PortfolioHome = () => {
             src={woodart.image2}
             alt={`${woodart.title} detail`}
             layout='fill'
-            objectFit='cover'
-            className='shadow-md'
+            objectFit='contain'
+            className=''
           />
         </div>
       </div>

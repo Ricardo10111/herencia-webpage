@@ -30,7 +30,7 @@ const AboutCRMemories = () => {
       </SlideInFromLeft>
 
       {/* Imágenes */}
-      <FadeIn className='flex-1 grid grid-cols-2 grid-rows-2 gap-4 max-w-lg'>
+      <FadeIn className='flex-1 grid grid-cols-2  gap-4 max-w-lg'>
         <div className='col-span-1 row-span-1'>
           <Image
             src='/Perfil/perfil.jpg'
