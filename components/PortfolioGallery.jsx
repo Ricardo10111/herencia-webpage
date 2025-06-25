@@ -7,7 +7,7 @@ import gsap from 'gsap'
 import DoorInfoBlock from './DoorInfoBlock'
 import woodarts from '@/lib/data/woodarts'
 
-import VibratingImage from './VibratingImage'
+import LottiePointer from './LottiePointer'
 
 const DoorGallery = () => {
   const doorRefs = useRef([])
@@ -153,10 +153,12 @@ const DoorGallery = () => {
                 {woodart.name}
               </h3>
             </div>
-            <VibratingImage
+            <div
+              className='z-20 relative'
               ref={(el) => (doorRefs.current[i] = el)}
-              className='z-20'
             >
+              {activeInfoIndex !== i && <LottiePointer />}
+
               <Link href={`/portfolio/${woodart.id}`}>
                 <Image
                   src={woodart.image}
@@ -167,7 +169,7 @@ const DoorGallery = () => {
                   draggable={false}
                 />
               </Link>
-            </VibratingImage>
+            </div>
           </div>
         )
       })}

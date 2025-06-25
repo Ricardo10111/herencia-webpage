@@ -26,7 +26,12 @@ const DoorInfoBlock = ({ id, title, feature, spects, dimensions, visible }) => {
   }, [visible])
 
   return (
-    <div className='relative w-full h-[400px]' style={{ perspective: 800 }}>
+    <div
+      className='relative w-full h-[400px]'
+      style={{ perspective: 800 }}
+      onMouseEnter={() => onHoverChange?.(true)}
+      onMouseLeave={() => onHoverChange?.(false)}
+    >
       <div
         ref={infoRef}
         className='absolute bottom-15 left-22 w-full h-full p-4'
