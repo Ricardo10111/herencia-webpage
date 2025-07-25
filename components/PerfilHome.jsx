@@ -8,7 +8,7 @@ import SlideInFromLeft from './SlideInFromLeft'
 
 const PerfilHome = () => {
   return (
-    <section className='flex flex-col lg:flex-row items-center justify-between w-full '>
+    <section className='flex flex-col lg:flex-row items-center justify-between max-w-[1600px] mx-auto'>
       <SlideInFromLeft className='hidden lg:block'>
         <Image
           src='/Perfil/perfil.jpg'

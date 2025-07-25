@@ -8,8 +8,15 @@ module.exports = {
   ],
   theme: {
     container: {
-      center: true,
-      padding: '15px',
+      center: true, // esto es lo que centra el contenedor horizontalmente
+      padding: '0px', // esto es el padding que se aplica a los lados del contenedor
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '960px',
+        xl: '1200px',
+        '2xl': '1600px', //
+      },
     },
     screens: {
       sm: '640px',
@@ -26,6 +33,7 @@ module.exports = {
         playfairSc: ['var(--font-playfair-display-sc)'],
         jetbrainsMono: ['var(--font-jetbrainsMono)'],
       },
+
       colors: {
         primary: '#fcfcfc',
         secondary: '#C5A95E',

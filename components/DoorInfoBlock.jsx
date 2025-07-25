@@ -34,7 +34,7 @@ const DoorInfoBlock = ({ id, title, feature, spects, dimensions, visible }) => {
     >
       <div
         ref={infoRef}
-        className='absolute bottom-15 left-22 w-full h-full p-4'
+        className='absolute bottom-15 left-16 w-full h-full p-4'
         style={{ zIndex: 10, transformStyle: 'preserve-3d' }}
       >
         <DoorInfoContent

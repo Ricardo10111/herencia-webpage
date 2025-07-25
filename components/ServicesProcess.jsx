@@ -58,13 +58,6 @@ const content = [
 const ServicesProcess = () => {
   return (
     <section className='py-20 px-6'>
-      <FadeIn className='text-center mb-16'>
-        <h2 className='text-[#c5a95e] text-2xl md:text-4xl font-thin'>
-          PROCESS
-        </h2>
-        <h3 className='text-3xl md:text-6xl font-thin'>What to Expect </h3>
-      </FadeIn>
-
       {/* Desktop Grid */}
       <div className='hidden md:grid grid-cols-3 gap-10 max-w-6xl mx-auto'>
         {content.map((item, index) =>

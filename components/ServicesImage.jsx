@@ -5,43 +5,44 @@ import SlideInFromLeft from './SlideInFromLeft'
 
 const ServicesImage = () => {
   return (
-    <div className='flex flex-col w-full md:flex-row items-center justify-between gap-8 my-2'>
-      <SlideInFromLeft>
-        <Image
-          src='/services/serviceImage.jpg'
-          alt='service image'
-          objectFit='cover'
-          quality={100}
-          className='hidden lg:block'
-          width={1024}
-          height={683}
-        />
-      </SlideInFromLeft>
-
-      {/* middle card */}
-
-      <FadeIn className='md:absolute  md:right-[160px] z-10 w-[95%] md:w-[440px] h-[591px] bg-white/50 backdrop-blur-md flex items-center justify-center'>
-        <div className='flex flex-col items-center  gap-2 shadow-lg  overflow-hidden hover:shadow-2xl transition-shadow duration-300 border-[1px] w-[95%] h-[95%] border-[#B58B61]'>
-          <img
-            src='/woodlogo4.svg'
-            alt='services logo'
-            className='w-[140px] h-[147px] object-cover'
+    <section className='w-full flex justify-center px-4 md:px-8'>
+      <div className='relative w-full max-w-[1600px] min-h-[757px] flex flex-col lg:flex-row items-center justify-between gap-6 my-2'>
+        {/* Left image */}
+        <SlideInFromLeft className='hidden lg:block w-[50%] h-full'>
+          <Image
+            src='/services/serviceImage.jpg'
+            alt='service image'
+            className='w-full h-full object-cover'
+            width={800}
+            height={757}
           />
-          <div className='p-4 flex flex-col items-center px-12 gap-6'>
-            <h4 className='text-3xl  mb-2 text-center'>
-              Creative, Passionate, Artistic
-            </h4>
-            <p className='text-[#414141] mb-4 text-center'>
-              Lorem ipsum dolor sit amet consectetur. Dignissim consectetur
-              tristique purus vehicula felis velit ac. Tempus velit morbi
-              accumsan
-            </p>
+        </SlideInFromLeft>
+
+        {/* Card */}
+        <FadeIn className='relative lg:absolute lg:left-[45%] z-10 w-full sm:w-[440px] h-auto lg:h-[591px] bg-white/50 backdrop-blur-md shadow-lg border border-[#B58B61] flex items-center justify-center'>
+          <div className='flex flex-col items-center gap-2 w-[95%] py-8 h-full text-center'>
+            <img
+              src='/woodlogo4.svg'
+              alt='services logo'
+              className='w-[140px] h-[147px] object-cover mx-auto'
+            />
+            <div className='p-4 flex flex-col items-center px-6 gap-6'>
+              <h4 className='text-2xl lg:text-3xl mb-2'>
+                Creative, Passionate, Artistic
+              </h4>
+              <p className='text-[#414141] text-sm lg:text-base'>
+                Lorem ipsum dolor sit amet consectetur. Dignissim consectetur
+                tristique purus vehicula felis velit ac. Tempus velit morbi
+                accumsan
+              </p>
+            </div>
           </div>
-        </div>
-      </FadeIn>
-      {/* Placeholder for the right side image */}
-      <div className='hidden md:block bg-[#F8F8F8] w-[351px] h-[757px]'></div>
-    </div>
+        </FadeIn>
+
+        {/* Right side placeholder */}
+        <div className='hidden lg:block bg-[#F8F8F8] w-[351px] h-[757px]'></div>
+      </div>
+    </section>
   )
 }
 

@@ -17,11 +17,11 @@ import GsapHeroContent from '@/components/GsapHeroContent'
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between'>
+    <main className='flex min-h-screen flex-col items-center justify-between max-w-[1600px] mx-auto '>
       {/* Image in the hero */}
-      <section className='relative w-full h-[100vh] overflow-hidden'>
+      <FadeInFromCenter className='relative w-full h-[100vh] overflow-hidden'>
         {/* Imagen de fondo */}
-        <div className='absolute inset-0 -z-10 aspect-w-16 aspect-h-9'>
+        <div className='absolute inset-0 -z-10 aspect-w-16 aspect-h-9 '>
           <Image
             src='/hero/woodhero.jpg'
             alt='Wooden carved door'
@@ -35,7 +35,7 @@ export default function Home() {
         </div>
 
         <GsapHeroContent />
-      </section>
+      </FadeInFromCenter>
 
       <section className='flex flex-col items-center bg-[#F4F4F4] justify-center w-full py-32 px-8 md:px-67 '>
         <FadeInTitle className='text-3xl md:text-6xl font-thin text-center'>

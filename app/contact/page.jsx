@@ -57,7 +57,7 @@ const Contact = () => {
   }
 
   return (
-    <section className='flex min-h-screen flex-col items-center justify-between'>
+    <section className='flex min-h-screen flex-col items-center justify-between max-w-[1600px] mx-auto'>
       <Toaster richColors position='top-center' />
       <FadeIn className='container flex flex-col items-center justify-center w-full py-[128px_60px] px-8 md:px-67'>
         <h1 className='text-2xl md:text-4xl font-thin text-center text-[#c5a95e]'>
