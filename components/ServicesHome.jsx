@@ -14,14 +14,15 @@ const servicesList = [
   },
   {
     logo: '/woodlogo2.svg',
-    title: 'Greater, Truer Spaces',
-    description: 'Shape moments that resonate and transform your space.',
+    title: 'Elevate Every Space',
+    description: 'Transform ordinary rooms into living statements of identity.',
     button: 'More Details',
   },
   {
     logo: '/woodlogo3.svg',
-    title: 'Ensure Your Peace of Mind',
-    description: 'Experience reliability with seamless and dependable service.',
+    title: 'Craft Peace of Mind',
+    description:
+      'Enjoy exceptional service and unwavering craftsmanship you can rely on.',
     button: 'More Details',
   },
 ]
@@ -30,10 +31,10 @@ const ServicesHome = () => {
     <section>
       <FadeIn className='flex flex-col items-center  justify-center w-full py-32 px-8 md:px-67 '>
         <h2 className='text-2xl md:text-4xl font-thin text-center text-[#c5a95e]'>
-          SERVICES
+          Our Promise
         </h2>
         <h3 className='text-3xl md:text-6xl font-thin text-center'>
-          My Premium Benefits
+          The Premium Ambience You Deserve
         </h3>
       </FadeIn>
 

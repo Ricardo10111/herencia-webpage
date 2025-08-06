@@ -7,15 +7,18 @@ import FadeIn from '@/components/FadeIn'
 
 const stats = [
   {
-    num: 12,
+    num: 50,
+    nextNumber: '+',
     text: 'Years of Experience',
   },
   {
-    num: 100,
+    num: 10,
+    nextNumber: 'K+',
     text: 'Masterpieces Created',
   },
   {
-    num: 300,
+    num: 3,
+    nextNumber: 'K+',
     text: 'Happy Clients',
   },
 ]
@@ -36,8 +39,11 @@ const Stats = () => {
     <section ref={ref} className='pt-4 pb-12 xl:pt-0 xl:pb-0'>
       <FadeIn className='flex flex-col items-center justify-center w-full pb-10 px-8 md:px-67 py-20'>
         <h3 className='text-3xl md:text-6xl font-thin text-center'>
-          BRINGING HANDCRAFTED WOOD ART TO LIFE FOR HOMES, SPACES, AND SPECIAL
-          MOMENTS
+          Why Clients{' '}
+          <span className='text-3xl md:text-6xl font-thin text-[#C5A95E]'>
+            Trust{' '}
+          </span>
+          Our Craft
         </h3>
       </FadeIn>
 
@@ -52,7 +58,11 @@ const Stats = () => {
             >
               <span className='text-4xl xl:text-6xl text-[#c5a95e] flex-shrink-0'>
                 {startCount ? <CountUp end={item.num} duration={2} /> : 0}
+                <span className='text-2xl text-[#c5a95e] xl:text-3xl '>
+                  {item.nextNumber}
+                </span>
               </span>
+
               <p
                 className={`${
                   item.text.length < 15 ? 'max-w-[100px]' : 'max-w-[150px]'

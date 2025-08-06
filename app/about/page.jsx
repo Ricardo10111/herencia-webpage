@@ -17,7 +17,9 @@ const about = () => {
         <h1 className='text-2xl md:text-4xl font-thin text-center text-[#c5a95e]'>
           ABOUT
         </h1>
-        <h2 className='text-3xl md:text-6xl font-thin text-center'>MY STORY</h2>
+        <h2 className='text-3xl md:text-6xl font-thin text-center'>
+          Our Founder, Juan Avila
+        </h2>
       </FadeIn>
 
       <div className='flex flex-col lg:flex-row items-center justify-between w-full '>
@@ -41,24 +43,22 @@ const about = () => {
         <div className=' px-6 md:px-20'>
           <FadeOnLoad className='flex flex-col items-center justify-center gap-12 w-full h-full text-center'>
             <p className='text-lg md:text-xl text-gray-600 max-w-2xl'>
-              Lorem ipsum dolor sit amet consectetur. Dignissim consectetur
-              tristique purus vehicula felis velit ac. Tempus velit morbi
-              accumsan id sit interdum lacus turpis ac. Integer malesuada
-              sagittis placerat eget. Lorem ipsum dolor sit amet consectetur.
-              Dignissim consectetur tristique purus vehicula felis velit ac.
-              Tempus velit morbi accumsan id sit interdum lacus turpis ac.
-              Integer malesuada sagittis placerat.
+              Juan, a hardworking, ambitious, and artistic individual honed his
+              wood carving skills over three decades. Raised in Tijuana, Mexico,
+              by his father, Jesus Avila, he inherited timeless ancestral
+              techniques. While mastering the art of wood sculpting, Juan also
+              earned a bachelor's degree in Civil Engineering from the Instituto
+              Tecnológico de Tijuana.
             </p>
             <p className='text-lg md:text-xl text-gray-600 max-w-2xl'>
-              Lorem ipsum dolor sit amet consectetur. Rutrum tincidunt consequat
-              nec potenti. Justo molestie amet vulputate aliquam viverra ut
-              viverra lorem. Velit tellus vitae massa sed egestas ornare pretium
+              Despite these notable achievements, Juan remained eager to broaden
+              his horizons and elevate his artistry. Taking a bold step, he
+              moved to Arizona, where he has lived for over 14 years. There, he
+              founded Herencia, driven by his enduring passion for traditional
+              craftsmanship. Through Herencia, Juan brings his unique talents
+              directly to clients—crafted exclusively for you.
             </p>
-            <p className='text-lg md:text-xl text-gray-600 max-w-2xl'>
-              Lorem ipsum dolor sit amet consectetur. Rutrum tincidunt consequat
-              nec potenti. Justo molestie amet vulputate aliquam viverra ut
-              viverra lorem. Velit tellus vitae massa sed egestas ornare pretium
-            </p>
+
             <img src='/logoprofile.svg' alt='flower Logo' className='h-12' />
             <Link
               href='/portfolio'

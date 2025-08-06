@@ -28,12 +28,11 @@ const ServicesImage = () => {
             />
             <div className='p-4 flex flex-col items-center px-6 gap-6'>
               <h4 className='text-2xl lg:text-3xl mb-2'>
-                Creative, Passionate, Artistic
+                Your Story, Crafted by Masters
               </h4>
               <p className='text-[#414141] text-sm lg:text-base'>
-                Lorem ipsum dolor sit amet consectetur. Dignissim consectetur
-                tristique purus vehicula felis velit ac. Tempus velit morbi
-                accumsan
+                Each artisan channels generations of skill into a piece made
+                only for you.
               </p>
             </div>
           </div>

@@ -9,10 +9,10 @@ const services = () => {
     <section className=' flex min-h-screen flex-col items-center justify-between max-w-[1600px] mx-auto'>
       <FadeIn className=' container flex flex-col items-center  justify-center w-full py-[128px_60px] px-8 md:px-67 '>
         <h1 className='text-2xl md:text-4xl font-thin text-center text-[#c5a95e]'>
-          SERVICES
+          YOUR JOURNEY
         </h1>
         <h2 className='text-3xl md:text-6xl font-thin text-center'>
-          What to Expect
+          The 5 Steps to Your Heritage{' '}
         </h2>
       </FadeIn>
 

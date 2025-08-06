@@ -7,51 +7,54 @@ import FadeIn from '@/components/FadeIn'
 import MobileServicesProcess from './MobileServicesProcess'
 const content = [
   {
-    type: 'image',
-    src: '/about/image1.png',
-  },
-  {
     type: 'text',
     number: '1',
-    title: 'BREAKING THE ICE',
-    text: 'Lorem ipsum dolor sit amet as a consectetur. Rutrum ins tincidunt consequat nec potenti. Justo molestie amet vulputate aliquam viverra ut viverra lorem. Velit tellus vitae massa sed egestas ornare pretium.',
+    title: 'Design Consultation',
+    text: 'We listen to your vision and ideas, translating them into an initial design that celebrates your unique story and style.',
   },
   {
     type: 'image',
-    src: '/about/image2.png',
+    src: '/services/prImage1.jpg',
   },
   {
     type: 'text',
     number: '2',
-    title: 'BREAKING THE ICE',
+    title: 'Project Approval',
 
-    text: 'Lorem ipsum dolor sit amet as a consectetur. Rutrum ins tincidunt consequat nec potenti. Justo molestie amet vulputate aliquam viverra ut viverra lorem. Velit tellus vitae massa sed egestas ornare pretium.',
+    text: 'We present detailed sketches, materials, and costs for your review and approval — ensuring everything aligns perfectly with your expectations.',
   },
   {
     type: 'image',
-    src: '/about/image3.png',
+    src: '/services/prImage2.jpg',
   },
   {
     type: 'text',
     number: '3',
-    title: 'BREAKING THE ICE',
+    title: 'Fabrication',
 
-    text: 'Lorem ipsum dolor sit amet as a consectetur. Rutrum ins tincidunt consequat nec potenti. Justo molestie amet vulputate aliquam viverra ut viverra lorem. Velit tellus vitae massa sed egestas ornare pretium.',
+    text: 'Our master artisans bring your design to life with expert craftsmanship, using the finest materials and techniques passed down through generations.',
   },
   {
     type: 'image',
-    src: '/about/image3.png',
+    src: '/services/prImage3.jpg',
   },
   {
     type: 'text',
     number: '4',
-    title: 'BREAKING THE ICE',
+    title: 'Signature Finishes',
 
-    text: 'Lorem ipsum dolor sit amet as a consectetur. Rutrum ins tincidunt consequat nec potenti. Justo molestie amet vulputate aliquam viverra ut viverra lorem. Velit tellus vitae massa sed egestas ornare pretium.',
+    text: 'We complete meticulous finishing touches, refining every detail to uphold our highest standards of craftsmanship before your before your personal unveiling.',
   },
   {
     type: 'image',
-    src: '/about/image3.png',
+    src: '/services/prImage4.jpg',
+  },
+  {
+    type: 'text',
+    number: '5',
+    title: 'La Clasura',
+
+    text: 'We celebrate the completion together, closing the project in a meaningful way as your new heirloom piece joins your story.',
   },
 ]
 

@@ -9,10 +9,6 @@ const Footer = () => {
         {/* Logo and description */}
         <div className='flex flex-col items-center lg:items-start gap-4'>
           <img src='/LogoHerencia.svg' alt='Logo' className='w-14' />
-          <p className='max-w-xs text-sm leading-relaxed'>
-            Lorem ipsum dolor sit amet consectetur. Morbi volut tempus posuere
-            viverra massa fames sed. Dignissim urisus et ac egestas dignissim.
-          </p>
         </div>
 
         {/* Navigation Links */}
@@ -35,8 +31,9 @@ const Footer = () => {
       {/* Centered text and icons */}
       <div className='mt-16 text-center flex flex-col items-center gap-6'>
         <p className='max-w-2xl text-sm'>
-          Lorem ipsum dolor sit amet consectetur. Morbi volut tempus posuere
-          viverra massa fames sed. Dignissim urisus et ac egestas dignissim.
+          “Our passion lies in preserving timeless craftsmanship while bringing
+          your vision to life. Every design is a reflection of your story —
+          built with care, tradition, and purpose.”
         </p>
         <div className='flex gap-6 text-[#9e7b55] text-xl'>
           <FaFacebookF />

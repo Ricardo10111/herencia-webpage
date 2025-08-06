@@ -53,7 +53,11 @@ const ReviewHome = () => {
     <section className='w-full'>
       <FadeIn className='flex flex-col items-center justify-center w-full pb-10 px-8 md:px-67 py-20'>
         <h3 className='text-3xl md:text-6xl font-thin text-center'>
-          The Impact of Our Masterpieces
+          The{' '}
+          <span className='text-3xl md:text-6xl font-thin text-[#C5A95E]'>
+            Impact{' '}
+          </span>
+          of Our Masterpieces
         </h3>
       </FadeIn>
 

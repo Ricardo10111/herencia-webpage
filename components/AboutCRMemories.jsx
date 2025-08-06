@@ -17,9 +17,9 @@ const AboutCRMemories = () => {
           Your Story, My Art
         </h4>
         <p className='text-[#4A4A4A] leading-relaxed bg-[#F5F5F5] p-6 mb-8'>
-          Lorem ipsum dolor sit amet consectetur. Rutrum tincidunt consequat nec
-          potenti. Justo molestie amet vulputate aliquam viverra ut viverra
-          lorem. Velit tellus vitae massa sed egestas ornare pretium.
+          Each piece we craft begins with your story. From sketches to final
+          carvings, your vision becomes art that lives on — made for you, made
+          to last.
         </p>
         <Link
           href='/portfolio'
@@ -33,7 +33,7 @@ const AboutCRMemories = () => {
       <FadeIn className='flex-1 grid grid-cols-2  gap-4 max-w-lg'>
         <div className='col-span-1 row-span-1'>
           <Image
-            src='/Perfil/perfil.jpg'
+            src='/Perfil/doorAbout.jpg'
             alt='Crafting Memories 1'
             width={400}
             height={400}
@@ -42,7 +42,7 @@ const AboutCRMemories = () => {
         </div>
         <div className='col-span-1 row-span-1 mt-36'>
           <Image
-            src='/Perfil/perfil.jpg'
+            src='/Perfil/doorAbout2.jpg'
             alt='Crafting Memories 2'
             width={400}
             height={400}

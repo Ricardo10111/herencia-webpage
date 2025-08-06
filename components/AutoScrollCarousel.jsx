@@ -9,26 +9,11 @@ import FadeIn from './FadeIn'
 
 const images = [
   '/carousel/image1.png',
-  '/carousel/image2.png',
+  '/carousel/image2.jpg',
   '/carousel/image3.JPG',
-  '/carousel/image1.png',
-  '/carousel/image1.png',
-  '/carousel/image1.png',
-  '/carousel/image1.png',
-  '/carousel/image1.png',
-  '/carousel/image1.png',
-  '/carousel/image1.png',
-  '/carousel/image1.png',
-  '/carousel/image1.png',
-  '/carousel/image1.png',
-  '/carousel/image1.png',
-  '/carousel/image1.png',
-  '/carousel/image1.png',
-  '/carousel/image1.png',
-  '/carousel/image1.png',
-  '/carousel/image1.png',
-  '/carousel/image1.png',
-  '/carousel/image1.png',
+  '/carousel/image4.jpg',
+  '/carousel/image5.jpg',
+  '/carousel/image6.jpg',
 
   // agrega más imágenes según necesites
 ]

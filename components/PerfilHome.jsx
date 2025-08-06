@@ -29,15 +29,15 @@ const PerfilHome = () => {
       <div className=' px-6 md:px-20'>
         <FadeIn className='flex flex-col items-center justify-center gap-12 w-full h-full text-center'>
           <img src='/points.svg' alt='points Logo' className='h-10' />
-          <h3 className='text-5xl'>Hello, My Name is Juan</h3>
+          <h3 className='text-5xl'>Our Founder | Juan Avila</h3>
           <span className='text-lg md:text-xl text-gray-600 max-w-2xl'>
-            Lorem ipsum dolor sit amet consectetur. Dignissim consectetur
-            tristique purus vehicula felis velit ac. Tempus velit morbi accumsan
-            id sit interdum lacus turpis ac. Integer malesuada sagittis placerat
-            eget. Lorem ipsum dolor sit amet consectetur. Dignissim consectetur
-            tristique purus vehicula felis velit ac. Tempus velit morbi accumsan
-            id sit interdum lacus turpis ac. Integer malesuada sagittis
-            placerat.
+            Juan Avila, founder of Herencia, carries five generations of carving
+            tradition with a modern eye. His mission: to preserve heritage
+            through purposeful design. <br />
+            <br />
+            With over 30 years of inherited artistry and engineering precision,
+            Juan leads Herencia in honoring history through each handcrafted
+            piece.
           </span>
           <img src='/logoprofile.svg' alt='flower Logo' className='h-12' />
           <h3 className='text-5xl'>Juan</h3>
@@ -45,7 +45,7 @@ const PerfilHome = () => {
             href='/about'
             className='bg-[#E9E1D9] hover:bg-[#dfd3c9] px-20 py-4 mt-10 cursor-pointer transition'
           >
-            Learn More
+            More about us
           </Link>
         </FadeIn>
       </div>
