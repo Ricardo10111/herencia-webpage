@@ -51,9 +51,9 @@ const ContactSection = () => {
   return (
     <>
       <Toaster richColors position='top-center' />
-      <FadeIn className='flex flex-col md:flex-row w-full min-h-screen  bg-cover bg-center mt-12 max-w-[1258px]'>
+      <FadeIn className='flex flex-col md:flex-row w-full min-h-screen  bg-cover bg-center mt-12 '>
         <div
-          className='flex items-center justify-center flex-col md:flex-row w-full min-h-screen  bg-cover bg-center mt-12 max-w-[1258px]'
+          className='flex items-center justify-center flex-col md:flex-row w-full min-h-screen  bg-cover bg-center mt-12 max-w-[1600px]'
           style={{ backgroundImage: "url('/contact/wood1.jpg')" }}
         >
           {/* Left Side - Contact Form */}
