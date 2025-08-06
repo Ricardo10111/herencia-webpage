@@ -146,7 +146,7 @@ const Contact = () => {
 
         <div className='w-full md:w-1/2 relative h-[500px] md:h-auto hidden md:block'>
           <Image
-            src='/contact/wood 1.jpg'
+            src='/contact/doorcontact.jpg'
             alt='Contact Illustration'
             fill
             className='object-cover hidden md:block'
