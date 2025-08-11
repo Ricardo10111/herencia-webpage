@@ -27,8 +27,8 @@ const PortfolioHome = () => {
   const woodart = woodarts[currentIndex]
 
   return (
-    <section className='w-full'>
-      <FadeIn className='flex flex-col items-center justify-center w-full pb-20 px-8 md:px-67'>
+    <section className='lg:w-[90%] mx-auto pb-14'>
+      <FadeIn className='flex flex-col items-center justify-center pb-10 md:pb-20 px-8 md:px-67'>
         <h2 className='text-2xl md:text-4xl font-thin text-center text-[#c5a95e]'>
           PORTFOLIO
         </h2>
@@ -38,12 +38,14 @@ const PortfolioHome = () => {
       </FadeIn>
 
       <div
-        className={`transition-container ${fadeState} flex flex-col md:flex-row items-center justify-between gap-12 px-6 w-full`}
+        className={`transition-container ${fadeState} flex flex-col md:flex-row items-center justify-center gap-12 lg:px-40 w-full`}
       >
-        <div className='bg-[#F8F8F8] max-w-[572px] md:w-[600px] p-10 max-h-[323px] flex flex-col justify-center mt-40'>
-          <h4 className='text-5xl font-bold text-[#c5a95e]'>{woodart.id}</h4>
+        <div className='bg-[#F8F8F8] max-w-[572px] md:w-[600px] p-10 max-h-[323px] flex flex-col justify-center '>
+          <h4 className='text-5xl font-bold text-[#c5a95e]'>{woodart.date}</h4>
           <h3 className='text-3xl text-[#4a4a4a] mb-3'>{woodart.title}</h3>
-          <p className='text-[#5B5B5B] leading-relaxed'>{woodart.feature}</p>
+          <p className='text-[#5B5B5B] leading-relaxed'>
+            {woodart.description}
+          </p>
         </div>
 
         <div className='relative w-[320px] h-[492px]'>
@@ -55,22 +57,12 @@ const PortfolioHome = () => {
             className=''
           />
         </div>
-
-        <div className='relative w-[320px] h-[492px]'>
-          <Image
-            src={woodart.image2}
-            alt={`${woodart.title} detail`}
-            layout='fill'
-            objectFit='contain'
-            className=''
-          />
-        </div>
       </div>
 
-      <FadeIn className='flex justify-end w-full px-8 md:px-20 pt-10'>
+      <FadeIn className='flex justify-center w-full px-8 md:px-20 pt-10'>
         <Link
           href='/portfolio'
-          className='bg-[#c5a95e] text-white px-6 py-3 rounded-md hover:bg-[#a28620] transition'
+          className='bg-[#c5a95e] text-white px-30 py-3 rounded-md hover:bg-[#a28620] transition'
         >
           View Gallery
         </Link>

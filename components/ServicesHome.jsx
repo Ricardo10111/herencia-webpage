@@ -10,25 +10,25 @@ const servicesList = [
     logo: '/woodlogo1.svg',
     title: 'Inspire Wonder and Awe',
     description: 'Design experiences that captivate and leave a mark',
-    button: 'More Details',
+    button: 'View Our Portfolio',
   },
   {
     logo: '/woodlogo2.svg',
     title: 'Elevate Every Space',
     description: 'Transform ordinary rooms into living statements of identity.',
-    button: 'More Details',
+    button: 'Learn About Our Process',
   },
   {
     logo: '/woodlogo3.svg',
     title: 'Craft Peace of Mind',
     description:
       'Enjoy exceptional service and unwavering craftsmanship you can rely on.',
-    button: 'More Details',
+    button: 'More About Us',
   },
 ]
 const ServicesHome = () => {
   return (
-    <section>
+    <section className='w-full flex flex-col items-center pb-30'>
       <FadeIn className='flex flex-col items-center  justify-center w-full py-32 px-8 md:px-67 '>
         <h2 className='text-2xl md:text-4xl font-thin text-center text-[#c5a95e]'>
           Our Promise
@@ -39,7 +39,7 @@ const ServicesHome = () => {
       </FadeIn>
 
       {/* Services list */}
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 p-6'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-40 p-6'>
         {servicesList.map((service, index) => (
           <FadeIn
             key={index}
@@ -50,16 +50,16 @@ const ServicesHome = () => {
               alt={service.title}
               className='w-[140px] h-[147px] object-cover'
             />
-            <div className='p-4 flex flex-col items-center px-12 gap-6'>
+            <div className='p-4 flex flex-col items-center  gap-8'>
               <h4 className='text-3xl  mb-2 text-center'>{service.title}</h4>
               <p className='text-[#5B5B5B] mb-4 text-center'>
                 {service.description}
               </p>
               <Link
                 href='/services'
-                className='bg-[#E9E1D9] hover:bg-[#dfd3c9] px-20 py-4 mt-10 cursor-pointer transition'
+                className='bg-[#C5A95E] text-white flex items-center justify-center w-50 hover:bg-[#dfd3c9] px- py-4 mt-10 cursor-pointer transition'
               >
-                View More
+                {service.button}
               </Link>
             </div>
           </FadeIn>

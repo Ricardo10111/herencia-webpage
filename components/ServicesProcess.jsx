@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import 'swiper/css'
 import 'swiper/css/pagination'
-import FadeIn from '@/components/FadeIn'
 import MobileServicesProcess from './MobileServicesProcess'
 const content = [
   {
@@ -60,7 +59,7 @@ const content = [
 
 const ServicesProcess = () => {
   return (
-    <section className='py-20 px-6'>
+    <section className='py-20 px-6 w-full'>
       {/* Desktop Grid */}
       <div className='hidden md:grid grid-cols-3 gap-10 max-w-6xl mx-auto'>
         {content.map((item, index) =>

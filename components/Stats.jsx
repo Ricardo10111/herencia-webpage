@@ -36,7 +36,7 @@ const Stats = () => {
   }, [inView])
 
   return (
-    <section ref={ref} className='pt-4 pb-12 xl:pt-0 xl:pb-0'>
+    <section ref={ref} className='w-full pt-4 pb-12 xl:pt-0 xl:pb-0'>
       <FadeIn className='flex flex-col items-center justify-center w-full pb-10 px-8 md:px-67 py-20'>
         <h3 className='text-3xl md:text-6xl font-thin text-center'>
           Why Clients{' '}
@@ -47,7 +47,7 @@ const Stats = () => {
         </h3>
       </FadeIn>
 
-      <div className='container mx-auto'>
+      <div className='w-full mx-auto'>
         <div className='flex flex-wrap gap-6 max-w-[80vw] xl:max-w-none'>
           {stats.map((item, index) => (
             <div

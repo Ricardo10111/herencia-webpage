@@ -9,33 +9,39 @@ import Image from 'next/image'
 const slides = [
   {
     id: 1,
-    image: '/about/image1.png',
-    title: 'BREAKING THE ICE',
-    text: 'Lorem ipsum dolor sit amet as a consectetur. Rutrum ins tincidunt consequat nec potenti. Justo molestie amet vulputate aliquam.',
+    image: '/services/prImage1.jpg',
+    title: 'Design Consultation',
+    text: 'We listen to your vision and ideas, translating them into an initial design that celebrates your unique story and style.',
   },
   {
     id: 2,
-    image: '/about/image2.png',
-    title: 'BREAKING THE ICE',
-    text: 'Vestibulum ante ipsum primis in faucibus. Justo molestie amet vulputate aliquam.',
+    image: '/services/prImage2.jpg',
+    title: 'Project Approval',
+    text: 'We present detailed sketches, materials, and costs for your review and approval — ensuring everything aligns perfectly with your expectations.',
   },
   {
     id: 3,
-    image: '/about/image3.png',
-    title: 'BREAKING THE ICE',
-    text: 'Nullam ac urna eu felis dapibus condimentum sit amet a augue.',
+    image: '/services/prImage3.jpg',
+    title: 'Fabrication',
+    text: 'Our master artisans bring your design to life with expert craftsmanship, using the finest materials and techniques passed down through generations.',
   },
   {
     id: 4,
-    image: '/about/image3.png',
-    title: 'BREAKING THE ICE',
-    text: 'Nullam ac urna eu felis dapibus condimentum sit amet a augue.',
+    image: '/services/prImage4.jpg',
+    title: 'Signature Finishes',
+    text: 'We complete meticulous finishing touches, refining every detail to uphold our highest standards of craftsmanship before your personal unveiling.',
+  },
+  {
+    id: 5,
+    image: '/services/prImage4.jpg',
+    title: 'La Clasura',
+    text: 'We celebrate the completion together, closing the project in a meaningful way as your new heirloom piece joins your story.',
   },
 ]
 
 const MobileServicesProcess = () => {
   return (
-    <section className='w-full max-w-md mx-auto md:hidden py-20 px-6'>
+    <section className='w-full max-w-md mx-auto md:hidden py-2 px-6'>
       <Swiper
         loop={true}
         autoplay={{

@@ -6,8 +6,8 @@ import ServicesProcess from '@/components/ServicesProcess'
 
 const services = () => {
   return (
-    <section className=' flex min-h-screen flex-col items-center justify-between max-w-[1600px] mx-auto'>
-      <FadeIn className=' container flex flex-col items-center  justify-center w-full py-[128px_60px] px-8 md:px-67 '>
+    <section className=' flex min-h-screen flex-col items-center justify-between max-w-[2000px] mx-auto'>
+      <FadeIn className='  flex flex-col items-center justify-center w-full md:py-[128px_60px] py-[128px_2px] px-8 md:px-67 '>
         <h1 className='text-2xl md:text-4xl font-thin text-center text-[#c5a95e]'>
           YOUR JOURNEY
         </h1>

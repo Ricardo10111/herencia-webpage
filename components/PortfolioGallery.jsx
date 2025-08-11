@@ -165,7 +165,7 @@ const DoorGallery = () => {
                   alt={woodart.title}
                   width={260}
                   height={430}
-                  className='rounded shadow-xl'
+                  className='rounded'
                   draggable={false}
                 />
               </Link>

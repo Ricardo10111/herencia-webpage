@@ -5,10 +5,10 @@ import SlideInFromLeft from './SlideInFromLeft'
 
 const ServicesImage = () => {
   return (
-    <section className='w-full flex justify-center px-4 md:px-8'>
-      <div className='relative w-full max-w-[1600px] min-h-[757px] flex flex-col lg:flex-row items-center justify-between gap-6 my-2'>
+    <section className='w-full flex justify-center pb-30 px-4 md:px-8'>
+      <div className='relative w-full  flex flex-col lg:flex-row items-center justify-between gap-6 my-2'>
         {/* Left image */}
-        <SlideInFromLeft className='hidden lg:block w-[50%] h-full'>
+        <SlideInFromLeft className='hidden lg:block w-[60%] h-full'>
           <Image
             src='/services/serviceImage.jpg'
             alt='service image'
@@ -19,7 +19,7 @@ const ServicesImage = () => {
         </SlideInFromLeft>
 
         {/* Card */}
-        <FadeIn className='relative lg:absolute lg:left-[45%] z-10 w-full sm:w-[440px] h-auto lg:h-[591px] bg-white/50 backdrop-blur-md shadow-lg border border-[#B58B61] flex items-center justify-center'>
+        <FadeIn className='relative lg:absolute lg:left-[55%] z-10 w-full sm:w-[440px] h-auto lg:h-[591px] bg-white/50 backdrop-blur-md shadow-lg border border-[#B58B61] flex items-center justify-center'>
           <div className='flex flex-col items-center gap-2 w-[95%] py-8 h-full text-center'>
             <img
               src='/woodlogo4.svg'
@@ -39,7 +39,7 @@ const ServicesImage = () => {
         </FadeIn>
 
         {/* Right side placeholder */}
-        <div className='hidden lg:block bg-[#F8F8F8] w-[351px] h-[757px]'></div>
+        <div className='hidden lg:block bg-[#F8F8F8] w-[451px] h-[757px]'></div>
       </div>
     </section>
   )

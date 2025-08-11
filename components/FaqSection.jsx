@@ -9,17 +9,17 @@ const faqs = [
   {
     question: 'HOW LONG DOES IT TAKE TO COMPLETE A COSTUM PIECE?',
     answer:
-      'It usually takes between 2 to 4 weeks depending on complexity and design revisions.',
+      'Our custom pieces typically take 3 to 4 months to complete. This timeframe gives our artisans the space to craft every detail with care, so your piece arrives with the quality and presence it deserves.',
   },
   {
     question: 'HOW MUCH DOES A CUSTOM PIECE COST?',
     answer:
-      'Prices vary based on size, materials, and detail. A quote is provided after consultation.',
+      'Each piece is as unique as the person commissioning it. Pricing depends on the intricacy of your design, the mediums involved, and the craftsmanship needed to achieve your vision.',
   },
   {
     question: 'CAN I REQUEST REVISIONS OR CHANGES DURING THE PROCESS?',
     answer:
-      'Yes, we include one round of revisions. Additional changes may incur extra costs.',
+      'We include up to three design revisions as part of your custom piece. This allows us to refine your vision together before moving into production. Additional changes beyond that are available through formal design change orders.',
   },
 ]
 
