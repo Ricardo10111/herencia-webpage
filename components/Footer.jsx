@@ -36,11 +36,31 @@ const Footer = () => {
           built with care, tradition, and purpose.”
         </p>
         <div className='flex gap-6 text-[#9e7b55] text-xl'>
-          <FaFacebookF />
-          <FaTwitter />
-          <FaYoutube />
-          <FaInstagram />
+          {/* Social Media Icons */}
+          <a
+            href='https://www.facebook.com/HerenciaCWA?mibextid=wwXIfr&rdid=cTU4c3vUW1NQ7YkW&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19fnL9H3QG%2F%3Fmibextid%3DwwXIfr'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaFacebookF />
+          </a>
+
+          <a
+            href='https://www.youtube.com/@herenciacwa'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaYoutube />
+          </a>
+          <a
+            href='https://www.instagram.com/herencia.cwa/?utm_source=qr'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaInstagram />
+          </a>
         </div>
+
         <p className='text-sm mt-4'>Copyright 2024 All Rights Reserved</p>
       </div>
     </footer>

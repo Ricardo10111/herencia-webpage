@@ -12,7 +12,7 @@ import AboutCRMemories from '@/components/AboutCRMemories'
 
 const about = () => {
   return (
-    <section className='max-w-[1600px] mx-auto  flex min-h-screen flex-col items-center justify-between'>
+    <section className='max-w-[2000px] mx-auto  flex min-h-screen flex-col items-center justify-between'>
       <FadeIn className='  flex flex-col items-center  justify-center w-full py-[128px_60px] px-8 md:px-67 '>
         <h1 className='text-2xl md:text-4xl font-thin text-center text-[#c5a95e]'>
           ABOUT
@@ -62,7 +62,7 @@ const about = () => {
             <img src='/logoprofile.svg' alt='flower Logo' className='h-12' />
             <Link
               href='/portfolio'
-              className='bg-[#E9E1D9] hover:bg-[#dfd3c9] px-20 py-4 mt-10 cursor-pointer transition'
+              className='bg-[#c5a95e] text-white hover:bg-[#cfba75] px-20 py-4 mt-10 cursor-pointer transition'
             >
               View Portfolio
             </Link>

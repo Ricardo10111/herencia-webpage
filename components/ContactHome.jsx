@@ -33,6 +33,7 @@ const ContactSection = () => {
 
     formData.append('name', data.name)
     formData.append('email', data.email)
+    formData.append('phone', data.phone || '')
     formData.append('textArea', data.textArea || '')
     if (data.image && data.image[0]) {
       formData.append('image', data.image[0])
@@ -103,6 +104,16 @@ const ContactSection = () => {
                     Ingresa un correo válido.
                   </span>
                 )}
+              </div>
+              <div>
+                <label className='block mb-2 font-semibold text-white'>
+                  PHONE
+                </label>
+                <input
+                  type='tel'
+                  {...register('phone')}
+                  className='w-full border-b border-white bg-transparent focus:outline-none py-2'
+                />
               </div>
 
               <div>

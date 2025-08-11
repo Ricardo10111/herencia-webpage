@@ -23,7 +23,7 @@ const AboutCRMemories = () => {
         </p>
         <Link
           href='/portfolio'
-          className='bg-[#E9E1D9] hover:bg-[#d6c9c1] px-8 py-4 transition text-[#4A4A4A]'
+          className='bg-[#c5a95e] text-white hover:bg-[#cfba75] px-8 py-4 transition'
         >
           View Gallery
         </Link>
