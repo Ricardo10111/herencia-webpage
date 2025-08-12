@@ -133,7 +133,7 @@ const DoorInfoContent = ({
     >
       <div className='relative z-10 flex flex-col justify-between h-full w-full'>
         <div ref={topRef} className='pb-4'>
-          <h3 className='text-4xl leading-snug font-semibold text-[#CBAE6B]'>
+          <h3 className='text-xl md:text-4xl leading-snug font-semibold text-[#CBAE6B]'>
             {title}
           </h3>
           <div
