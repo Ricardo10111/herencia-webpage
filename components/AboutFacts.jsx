@@ -4,6 +4,8 @@ import Image from 'next/image'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import FadeIn from '@/components/FadeIn'
+import SlideInFromLeft from './SlideInFromLeft'
+import SlideInFromRight from './SlideInFromRight'
 
 const AboutFacts = () => {
   return (
@@ -19,7 +21,7 @@ const AboutFacts = () => {
 
       {/* Desktop Grid */}
       <div className=' grid md:grid-cols-2 gap-20 lg:max-w-6xl md:max-w-5xl mx-auto px-12'>
-        <div>
+        <SlideInFromLeft>
           <Image
             src='/about/image1.jpg'
             alt='About Image 1'
@@ -27,8 +29,8 @@ const AboutFacts = () => {
             height={460}
             className='rounded-md object-cover w-full h-auto'
           />
-        </div>
-        <div className='flex flex-col justify-center items-center gap-6'>
+        </SlideInFromLeft>
+        <SlideInFromRight className='flex flex-col justify-center items-center gap-6'>
           <h3 className='text-2xl md:text-4xl font-thin'>
             OUR <span className='text-[#c5a95e]'>GROWING </span>LEGACY{' '}
           </h3>
@@ -37,8 +39,8 @@ const AboutFacts = () => {
             homes across the U.S. Every piece we craft becomes a bridge — from
             past to present, from here to wherever your story lives.
           </p>
-        </div>
-        <div className='flex flex-col justify-center items-center gap-6'>
+        </SlideInFromRight>
+        <SlideInFromLeft className='flex flex-col justify-center items-center gap-6'>
           <h3 className='text-2xl md:text-4xl font-thin'>
             OUR <span className='text-[#c5a95e]'>TOP </span>MEDIUMS{' '}
           </h3>
@@ -49,8 +51,8 @@ const AboutFacts = () => {
             height={460}
             className='rounded-md object-cover w-full h-auto'
           />
-        </div>
-        <div className='flex flex-col justify-center items-center gap-6'>
+        </SlideInFromLeft>
+        <SlideInFromRight className='flex flex-col justify-center items-center gap-6'>
           <h3 className='text-2xl md:text-4xl font-thin'>
             OUR <span className='text-[#c5a95e]'>TOP </span>STYLES
           </h3>
@@ -64,7 +66,7 @@ const AboutFacts = () => {
             height={460}
             className='rounded-md object-cover w-full h-auto'
           />
-        </div>
+        </SlideInFromRight>
       </div>
     </section>
   )

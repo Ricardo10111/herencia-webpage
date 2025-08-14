@@ -23,10 +23,13 @@ export default function Hero() {
         <GsapHeroContent />
       </FadeInFromCenter>
 
-      <div className='flex flex-col items-center bg-[#F4F4F4] justify-center w-full py-32 px-8 md:px-67 '>
-        <FadeInTitle className='text-3xl md:text-6xl font-thin text-center'>
-          Your Heritage Deserves to Be Built, Not <span></span>
-          <RotatingWords />
+      <div className='flex flex-col items-center bg-[#F4F4F4] justify-center w-full py-32 px-8 md:px-24 '>
+        <FadeInTitle className='text-3xl md:text-6xl font-thin text-start md:text-center'>
+          Your Heritage Deserves to Be Built,
+          <br />
+          <div className='text-start'>
+            Not <RotatingWords />
+          </div>
         </FadeInTitle>
       </div>
     </section>

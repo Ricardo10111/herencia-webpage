@@ -55,7 +55,7 @@ const ContactSection = () => {
 
       <FadeIn className='flex flex-col justify-center md:flex-row min-h-screen  bg-cover bg-center mt-12 '>
         <div
-          className='flex items-center justify-center flex-col md:flex-row w-full min-h-screen  bg-cover bg-center mt-12 max-w-[1600px]'
+          className='flex items-center justify-center flex-col md:flex-row w-full min-h-screen  bg-cover bg-center mt-12 max-w-[2000px]'
           style={{ backgroundImage: "url('/contact/wood1.jpg')" }}
         >
           {/* Left Side - Contact Form */}
@@ -127,7 +127,7 @@ const ContactSection = () => {
                 />
               </div>
 
-              <div className=''>
+              <div className='w-full '>
                 <label className='block mb-2 font-semibold text-white'>
                   UPLOAD IMAGE
                 </label>
@@ -136,7 +136,7 @@ const ContactSection = () => {
                   accept='image/*'
                   {...register('image')}
                   onChange={handleImagePreview}
-                  className='block w-full text-sm text-white file:mr-4 file:py-2 file:px-4  file:border-0 file:text-sm  file:bg-[#eae4dd] file:text-black hover:file:bg-[#d5cbbf] transition'
+                  className=' block max-w-fit text-sm text-white file:mr-4 file:py-2 file:px-4  file:border-0 file:text-sm  file:bg-[#c5a95e] file:text-white hover:file:bg-[#cfba75] transition'
                 />
                 {imagePreview && (
                   <div className='mt-4'>
@@ -153,7 +153,7 @@ const ContactSection = () => {
 
               <button
                 type='submit'
-                className='border text-[#4a5057] border-[#4a5057] px-10 py-2 bg-[#eae4dd] hover:bg-[#d5cbbf] transition '
+                className='w-full px-10 py-2 bg-[#c5a95e] hover:bg-[#cfba75] transition '
               >
                 Send
               </button>

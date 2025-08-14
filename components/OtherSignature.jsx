@@ -4,6 +4,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import FadeIn from '@/components/FadeIn'
 
+import MobileOtherSignature from '@/components/MobileOtherSignature'
+
 export default function OtherSignature({ items = [] }) {
   if (!items.length) return null
 
@@ -15,7 +17,7 @@ export default function OtherSignature({ items = [] }) {
         </h3>
       </FadeIn>
 
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl w-full'>
+      <div className='hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl w-full'>
         {items.map((item) => (
           <Link
             key={item.id}
@@ -43,6 +45,8 @@ export default function OtherSignature({ items = [] }) {
           </Link>
         ))}
       </div>
+
+      <MobileOtherSignature items={items} />
     </section>
   )
 }

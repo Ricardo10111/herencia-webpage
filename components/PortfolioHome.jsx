@@ -33,7 +33,7 @@ const PortfolioHome = () => {
           PORTFOLIO
         </h2>
         <h3 className='text-3xl md:text-6xl font-thin text-center'>
-          Our Galery
+          Our Gallery
         </h3>
       </FadeIn>
 

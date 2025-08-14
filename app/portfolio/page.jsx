@@ -13,7 +13,7 @@ const portfolio = () => {
           PORTFOLIO
         </h1>
         <h2 className='text-3xl md:text-6xl font-thin text-center'>
-          HIGHLIGHTED WORKS
+          Highlighting Works
         </h2>
       </FadeIn>
 

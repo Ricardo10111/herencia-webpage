@@ -11,12 +11,14 @@ const servicesList = [
     title: 'Inspire Wonder and Awe',
     description: 'Design experiences that captivate and leave a mark',
     button: 'View Our Portfolio',
+    href: '/portfolio',
   },
   {
     logo: '/woodlogo2.svg',
     title: 'Elevate Every Space',
     description: 'Transform ordinary rooms into living statements of identity.',
     button: 'Learn About Our Process',
+    href: '/services',
   },
   {
     logo: '/woodlogo3.svg',
@@ -24,6 +26,7 @@ const servicesList = [
     description:
       'Enjoy exceptional service and unwavering craftsmanship you can rely on.',
     button: 'More About Us',
+    href: '/about',
   },
 ]
 const ServicesHome = () => {
@@ -56,8 +59,8 @@ const ServicesHome = () => {
                 {service.description}
               </p>
               <Link
-                href='/services'
-                className='bg-[#C5A95E] text-white flex items-center justify-center w-50 hover:bg-[#dfd3c9] px- py-4 mt-10 cursor-pointer transition'
+                href={service.href}
+                className='bg-[#C5A95E] text-white flex items-center justify-center w-50 hover:bg-[#cfba75] px- py-4 mt-10 cursor-pointer transition'
               >
                 {service.button}
               </Link>

@@ -100,7 +100,7 @@ export default function DiscoveryPortfolio({ woodart }) {
       </div>
 
       {videoUrl && (
-        <div className='px-8 pb-12 max-w-5xl mx-auto'>
+        <div className='px-0 md:px-8 md:pb-12 max-w-5xl mx-auto'>
           <YouTubeEmbed url={videoUrl} title={`${woodart.name} – Discovery`} />
         </div>
       )}

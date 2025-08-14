@@ -12,7 +12,7 @@ function DescriptionPortfolio({ woodart }) {
     return <div className='p-8 text-red-500'>Producto no encontrado.</div>
   return (
     <section className='flex flex-col justify-center items-center w-full gap-8 p-8'>
-      <SlideInFromLeft className='flex flex-col md:flex-row justify-between w-full items-center max-w-5xl '>
+      <SlideInFromLeft className='flex flex-col md:flex-row justify-between w-full items-start md:items-center max-w-5xl '>
         {/* <button
           onClick={() => router.back()}
           className='bg-[#c5a95e] hover:bg-[#cfba75] text-white px-10 py-2 relative md:right-10 cursor-pointer transition'
@@ -26,7 +26,7 @@ function DescriptionPortfolio({ woodart }) {
           Category: <span className='text-[#BBA085]'>{woodart.category}</span>
         </p>
         <p className='text-2xl font-extralight'>
-          Cost: <span className='text-[#BBA085]'>{woodart.medium}</span>
+          Medium(s): <span className='text-[#BBA085]'>{woodart.medium}</span>
         </p>
       </SlideInFromLeft>
 
@@ -58,7 +58,7 @@ function DescriptionPortfolio({ woodart }) {
           </SlideInFromRight>
           <Link
             href='/contact'
-            className='bg-[#c5a95e] text-white text-center hover:bg-[#cfba75] min-w-[450px] px-12 py-2 mt-10 cursor-pointer transition'
+            className='bg-[#c5a95e] text-white text-center hover:bg-[#cfba75] w-full px-12 py-2 mt-10 cursor-pointer transition'
           >
             Contact Us
           </Link>

@@ -42,7 +42,6 @@ const DoorDetail = () => {
       <DescriptionPortfolio woodart={woodart} />
       <DiscoveryPortfolio woodart={woodart} />
 
-      {/* 👉 sección de “Other Signature Projects” */}
       <OtherSignature items={others} />
     </motion.div>
   )
