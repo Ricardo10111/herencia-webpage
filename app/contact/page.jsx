@@ -133,7 +133,7 @@ const Contact = () => {
                 className='block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:border-0 file:text-sm file:bg-[#c5a95e] file:text-white hover:file:bg-[#cfba75] transition hover:file:cursor-pointer'
               />
               {imagePreview && (
-                <div className='mt-4'>
+                <div className='mt-4 flex items-center gap-4'>
                   <Image
                     src={imagePreview}
                     alt='Preview'
@@ -141,6 +141,18 @@ const Contact = () => {
                     height={100}
                     className='rounded border'
                   />
+                  <button
+                    type='button'
+                    onClick={() => {
+                      setImagePreview(null)
+                      const fileInput =
+                        document.querySelector('input[type="file"]')
+                      if (fileInput) fileInput.value = ''
+                    }}
+                    className='px-3 py-1 bg-[#c5a95e] text-white rounded hover:bg-red-600 transition hover:cursor-pointer'
+                  >
+                    Remove
+                  </button>
                 </div>
               )}
             </div>
