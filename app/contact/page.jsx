@@ -130,7 +130,7 @@ const Contact = () => {
                 accept='image/*'
                 {...register('image')}
                 onChange={handleImagePreview}
-                className='block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:border-0 file:text-sm file:bg-[#eae4dd] file:text-black hover:file:bg-[#d5cbbf] transition'
+                className='block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:border-0 file:text-sm file:bg-[#c5a95e] file:text-white hover:file:bg-[#cfba75] transition hover:file:cursor-pointer'
               />
               {imagePreview && (
                 <div className='mt-4'>
@@ -147,7 +147,7 @@ const Contact = () => {
 
             <button
               type='submit'
-              className='border border-[#4a5057] px-10 py-2 bg-[#eae4dd] hover:bg-[#d5cbbf] transition'
+              className='border text-white border-[#c5a95e] px-10 py-2 w-full bg-[#c5a95e] hover:bg-[#cfba75] transition hover:cursor-pointer'
             >
               Send
             </button>
@@ -158,8 +158,8 @@ const Contact = () => {
           <Image
             src='/contact/doorcontact.jpg'
             alt='Contact Illustration'
-            fill
-            className='object-cover hidden md:block'
+            fill={true}
+            className='object-contain hidden md:block'
           />
         </div>
       </FadeOnLoad>
