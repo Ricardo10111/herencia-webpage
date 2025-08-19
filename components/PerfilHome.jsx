@@ -22,8 +22,8 @@ const PerfilHome = () => {
         <Image
           src='/Perfil/perfil.jpg'
           alt='Perfil Image'
-          width={150}
-          height={100}
+          width={250}
+          height={200}
           className='flex lg:hidden rounded-full mt-5 mb-6 '
         />
 

@@ -25,7 +25,7 @@ const about = () => {
       <div className='flex flex-col lg:flex-row items-center justify-between w-full '>
         <SlideInFromLeft className='hidden lg:block'>
           <Image
-            src='/Perfil/perfil.jpg'
+            src='/Perfil/perfil2.jpg'
             alt='Perfil Image'
             width={572}
             height={858}
@@ -35,8 +35,8 @@ const about = () => {
         <Image
           src='/Perfil/perfil.jpg'
           alt='Perfil Image'
-          width={150}
-          height={100}
+          width={250}
+          height={200}
           className='flex lg:hidden rounded-full mt-5 mb-6 '
         />
 

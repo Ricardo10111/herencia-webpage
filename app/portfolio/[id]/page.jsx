@@ -35,7 +35,7 @@ const DoorDetail = () => {
           GALLERY
         </h1>
         <h2 className='text-3xl md:text-6xl font-thin text-center'>
-          {woodart?.name}
+          {woodart?.title}
         </h2>
       </FadeIn>
 

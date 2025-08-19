@@ -4,21 +4,12 @@ import Link from 'next/link'
 import SlideInFromLeft from '@/components/SlideInFromLeft'
 import SlideInFromRight from '@/components/SlideInFromRight'
 import { FaFacebookF, FaYoutube, FaInstagram } from 'react-icons/fa'
-import { useRouter } from 'next/navigation'
 function DescriptionPortfolio({ woodart }) {
-  //   const router = useRouter()
-
   if (!woodart)
     return <div className='p-8 text-red-500'>Producto no encontrado.</div>
   return (
     <section className='flex flex-col justify-center items-center w-full gap-8 p-8'>
       <SlideInFromLeft className='flex flex-col md:flex-row justify-between w-full items-start md:items-center max-w-5xl '>
-        {/* <button
-          onClick={() => router.back()}
-          className='bg-[#c5a95e] hover:bg-[#cfba75] text-white px-10 py-2 relative md:right-10 cursor-pointer transition'
-        >
-          ← Back to Gallery
-        </button> */}
         <p className='text-2xl font-extralight'>
           Date: <span className='text-[#BBA085]'>{woodart.completeDate}</span>
         </p>
@@ -36,7 +27,7 @@ function DescriptionPortfolio({ woodart }) {
           alt={woodart.title}
           width={400}
           height={600}
-          className='max-h-[600px] max-w-[300px] rounded-lg  object-fit'
+          className='max-h-[900px] max-w-[600px] rounded-lg  object-fit'
         />
         <div className='flex flex-col justify-start items-start gap-4 max-w-md'>
           <SlideInFromRight className='bg-[#F5F5F5] p-12 flex flex-col justify-center items-center w-full gap-4 max-w-5xl '>
