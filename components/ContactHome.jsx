@@ -138,21 +138,7 @@ const ContactSection = () => {
                   onChange={handleImagePreview}
                   className=' block max-w-fit text-sm text-white file:mr-4 file:py-2 file:px-4  file:border-0 file:text-sm  file:bg-[#c5a95e] file:text-white hover:file:bg-[#cfba75] transition'
                 />
-                {/* Without remove button */}
 
-                {/* {imagePreview && (
-                  <div className='mt-4'>
-                    <Image
-                      src={imagePreview}
-                      alt='Preview'
-                      width={100}
-                      height={100}
-                      className='rounded border'
-                    />
-                  </div>
-                )} */}
-
-                {/* With remove button */}
                 {imagePreview && (
                   <div className='mt-4 flex items-center gap-4'>
                     <Image
@@ -186,16 +172,6 @@ const ContactSection = () => {
               </button>
             </form>
           </div>
-
-          {/* Right Side - Image */}
-          {/* <div className='w-full md:w-1/2 relative h-[500px] md:h-auto hidden md:block'>
-          <Image
-            src='/contact/wood 1.jpg'
-            alt='Contact Illustration'
-            fill
-            className='object-cover hidden md:block'
-          />
-        </div> */}
         </div>
       </FadeIn>
     </section>

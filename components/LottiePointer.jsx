@@ -1,6 +1,5 @@
 'use client'
 
-import { useEffect } from 'react'
 import Lottie from 'lottie-react'
 import pointerAnimation from '@/animations/pointer-guide.json'
 

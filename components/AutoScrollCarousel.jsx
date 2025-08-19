@@ -14,8 +14,6 @@ const images = [
   '/carousel/image4.jpg',
   '/carousel/image5.jpg',
   '/carousel/image6.jpg',
-
-  // agrega más imágenes según necesites
 ]
 
 const SmoothInfiniteCarousel = () => {

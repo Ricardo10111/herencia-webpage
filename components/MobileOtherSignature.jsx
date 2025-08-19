@@ -40,13 +40,6 @@ const MobileOtherSignature = ({ items = [] }) => {
                 className=' object-cover ml-6 mb-6'
               />
             </Link>
-
-            {/* <h3 className='text-4xl text-[#c5a95e] mb-2'>{item.id}</h3>
-            <div className='w-10 border-t border-[#c5a95e] mx-auto mb-4' />
-            <h4 className='text-2xl  mb-2'>{item.title}</h4>
-            <p className='text-gray-700 leading-relaxed max-w-sm'>
-              {item.text}
-            </p> */}
           </SwiperSlide>
         ))}
       </Swiper>

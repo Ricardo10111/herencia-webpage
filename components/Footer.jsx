@@ -13,17 +13,25 @@ const Footer = () => {
 
         {/* Navigation Links */}
         <div className='flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16'>
-          {['HOME', 'ABOUT', 'SERVICES', 'PORTFOLIO', 'CONTACT'].map(
-            (item, idx) => (
-              <Link
-                key={idx}
-                href={item === 'HOME' ? '/' : `/${item.toLowerCase()}`}
-              >
-                <span className='hover:text-[#C5A95E] transition-colors'>
-                  {item}
-                </span>
-              </Link>
-            ),
+          {['HOME', 'ABOUT', 'OUR PROCESS', 'PORTFOLIO', 'CONTACT'].map(
+            (item, idx) => {
+              let href = ''
+              if (item === 'HOME') {
+                href = '/'
+              } else if (item === 'OUR PROCESS') {
+                href = '/services'
+              } else {
+                href = `/${item.toLowerCase()}`
+              }
+
+              return (
+                <Link key={idx} href={href}>
+                  <span className='hover:text-[#C5A95E] transition-colors'>
+                    {item}
+                  </span>
+                </Link>
+              )
+            },
           )}
         </div>
       </div>
