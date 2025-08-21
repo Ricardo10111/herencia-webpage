@@ -20,19 +20,33 @@ export const metadata = {
   metadataBase: new URL('https://www.herenciawoodart.com'),
   title: {
     default: 'Herencia Wood Art – Five Generations of Woodcarving Tradition',
-    template: `%s | Herencia Wood Art`,
+    template: '%s | Herencia Wood Art',
   },
   description:
     'Herencia Wood Art blends five generations of Mexican woodcarving tradition with modern design. Discover timeless handcrafted pieces that preserve heritage through purposeful craftsmanship.',
+  alternates: {
+    canonical: '/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
   openGraph: {
     title: 'Herencia Wood Art – Five Generations of Woodcarving Tradition',
     description:
       'Discover timeless handcrafted wood art that blends five generations of tradition with modern design.',
-    url: '/',
+    url: 'https://www.herenciawoodart.com/',
     siteName: 'Herencia Wood Art',
     images: [
       {
-        url: '/og.jpg',
+        url: '/og.jpg', // gracias a metadataBase se resolverá como absoluto
         width: 1200,
         height: 630,
         alt: 'Herencia Wood Art',
@@ -53,6 +67,7 @@ export const metadata = {
     shortcut: '/favicon.ico',
     apple: '/apple-touch-icon.png',
   },
+  themeColor: '#000000',
 }
 
 export default function RootLayout({ children }) {
